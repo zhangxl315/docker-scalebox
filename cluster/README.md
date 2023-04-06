@@ -95,7 +95,10 @@ LOCAL_ADDR=192.168.56.21
 ```bash
 cd ~/docker-scalebox/cluster && make all
 ```
-
+如果执行报错，需执行以下操作后，再执行上述命令
+```bash
+rm -f /usr/local/bin/scalebox
+```
 ## Scalebox多节点集群安装
 
 ### 头节点安装
