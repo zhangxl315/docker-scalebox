@@ -36,6 +36,8 @@ yum install -y htop dstat rsync pv pdsh wget make
 
 - sshd
   - turn off UseDNS/GSSAPIAuthentication
+    - 手动修改/etc/ssh/sshd_config文件中“GSSAPIAuthentication yes”为“GSSAPIAuthentication no”
+    - service sshd restart
 
 - Setup Linux Time Calibration
 ### 安装scalebox命令工具
